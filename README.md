@@ -36,7 +36,7 @@ Cypress version --> 13.10
     3. Execute "npx cypress open" command and navigate to e2e testing.
     4. Once cypress test runner is launched. you could find a cypress folder with "fixtures" and "support" folder.
     5. Click on create spec in test runner. It will create e2e folder with spec.cy.js file.
-    6. ![alt text](image.png) 
+    6. Please refer (image.png) for the folder structure. 
 
 ## Execute Scripts in Headless Mode or Headed Mode
     1. cypress open will launch the test runner and run scripts in headed mode.
