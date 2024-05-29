@@ -30,3 +30,11 @@ Cypress version --> 13.10
     @badeball/cypress-cucumber-preprocessor
     @badeball/cypress-cucumber-preprocessor/browserify
 
+## Steps to install package.json and cypress
+    1. Execute "npm -i init" to install package.json file
+    2. Execute "npm run cypress --save-dev" to install cypress.
+    3. Execute "npx cypress open" command and navigate to e2e testing.
+    4. Once cypress test runner is launched. you could find a cypress folder with "fixtures" and "support" folder.
+    5. Click on create spec in test runner. It will create e2e folder with spec.cy.js file.
+    6. ![alt text](image.png) 
+
