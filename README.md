@@ -38,3 +38,7 @@ Cypress version --> 13.10
     5. Click on create spec in test runner. It will create e2e folder with spec.cy.js file.
     6. ![alt text](image.png) 
 
+## Execute Scripts in Headless Mode or Headed Mode
+    1. cypress open will launch the test runner and run scripts in headed mode.
+    2. cypress run will run scripts in headless mode.
+
