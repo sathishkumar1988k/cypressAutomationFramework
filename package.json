@@ -1,0 +1,23 @@
+{
+  "name": "cypressautomationframework",
+  "version": "1.0.0",
+  "description": "Cypress with Cucumber framework for Web & API Automation",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --browser=chrome",
+    "cy:run:smoke": "cypress run --browser=chrome --env tags=@Smoke",
+    "cy:run:regression": "cypress run --browser=chrome --env tags=@Regression",
+    "cy:run:web": "cypress run --browser=chrome --env tags=@Web",
+    "cy:run:api": "cypress run --env tags=@Api"
+  },
+  "author": "Sathish Kumar Karuppusamy(https://www.linkedin.com/in/sathish-kumar-k-2bb914156/)",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.10.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+    "@cypress/browserify-preprocessor": "^3.0.2"
+  }
+}
