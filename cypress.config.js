@@ -24,4 +24,5 @@ module.exports = defineConfig({
   },
   defaultCommandTimeout: 4000,
   pageLoadTimeout: 60000,
+  projectId: "4tytt2",
 });

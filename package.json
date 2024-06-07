@@ -9,12 +9,14 @@
     "cy:run:smoke": "cypress run --browser=chrome --env tags=@Smoke",
     "cy:run:regression": "cypress run --browser=chrome --env tags=@Regression",
     "cy:run:web": "cypress run --browser=chrome --env tags=@Web",
-    "cy:run:api": "cypress run --env tags=@Api"
+    "cy:run:api": "cypress run --env tags=@Api",
+    "cy:parallel": "cypress-parallel -d cypress/e2e/features/ -t 2 -s cy:run:web -m false"
   },
   "author": "Sathish Kumar Karuppusamy(https://www.linkedin.com/in/sathish-kumar-k-2bb914156/)",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.10.0"
+    "cypress": "^13.10.0",
+    "cypress-parallel": "^0.14.0"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.0.5",

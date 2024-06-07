@@ -6,3 +6,6 @@ cucumberReports/
 
 # Screenshots folder
 screenshots/
+cypress/parallel-weights.json
+cypress/downloads/downloads.htm
+runner-results

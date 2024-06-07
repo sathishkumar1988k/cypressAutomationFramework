@@ -5,7 +5,7 @@
   ],
   "json": {
     "enabled": true,
-    "output": "cypress/cucumberReports/jsonResult.json"
+    "output": "cypress/cucumberReports/json/jsonResult.json"
   },
   "html": {
     "enabled": true,
