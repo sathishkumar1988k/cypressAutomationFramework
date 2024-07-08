@@ -16,7 +16,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.10.0",
-    "cypress-parallel": "^0.14.0"
+    "cypress-parallel": "^0.14.0",
+    "multiple-cucumber-html-reporter": "^3.6.2"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
