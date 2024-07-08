@@ -23,6 +23,5 @@ module.exports = defineConfig({
     "openMode": 0
   },
   defaultCommandTimeout: 4000,
-  pageLoadTimeout: 60000,
-  projectId: "4tytt2",
+  pageLoadTimeout: 60000
 });
