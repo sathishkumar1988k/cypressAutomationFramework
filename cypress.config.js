@@ -5,27 +5,31 @@ const {
 const {
   preprocessor
 } = require("@badeball/cypress-cucumber-preprocessor/browserify");
-const { execSync } = require('child_process');
 const report = require("multiple-cucumber-html-reporter");
+let browserInfo = {};
 
 async function setupNodeEvents(on, config) {
   await addCucumberPreprocessorPlugin(on, config);
   on("file:preprocessor", preprocessor(config));
+  on('before:browser:launch', (browser = {},) => {
+    browserInfo.name = browser.name;
+    browserInfo.version = browser.version;
+  });
   on("after:run",() => {
     report.generate({
       jsonDir: "./cypress/cucumberReports/json",
       reportPath: "./cypress/cucumberReports/report",
-      // metadata: {
-      //   browser: {
-      //     name: browserInfo.name,
-      //     version: browserInfo.version,
-      //   },
-      //   device: 'Local Device',
-      //   platform: {
-      //     name: process.platform,
-      //     version: process.version,
-      //   },
-      // },
+      metadata: {
+        browser: {
+          name: browserInfo.name,
+          version: browserInfo.version,
+        },
+        device: "Local test machine",
+        platform: {
+          name: process.platform,
+          version: process.version,
+        },
+      },
     });
   })
   return config;

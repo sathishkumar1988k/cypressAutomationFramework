@@ -1,5 +1,5 @@
 @Web @Regression
-Feature: Login functionality on practice test automation website
+Feature: Login functionality on practice test automation website - UnHappy path scenario
     
     Scenario: Verify invalid user name error message is displayed on practice testautomation with invalid credentials
 
