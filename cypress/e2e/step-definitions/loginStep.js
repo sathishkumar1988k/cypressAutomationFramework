@@ -1,4 +1,4 @@
-import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
+import { Given, When, Then, attach } from "@badeball/cypress-cucumber-preprocessor";
 import testData from '../../fixtures/uiTestData.json';
 import loginpage from '../../support/loginpage.js';
 
@@ -13,5 +13,6 @@ When(/^the user enter "([^"]*)" as username and "([^"]*)" as password and click 
 });
 
 Then('verify invalid username error message is displayed', () => {
-    loginpage.verifyLoginErrorMessage("Your username is invalid!")
+    loginpage.verifyLoginErrorMessage("Your username is invalid!");
+    cy.screenshot();
 });

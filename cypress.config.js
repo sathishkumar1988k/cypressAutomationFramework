@@ -15,7 +15,7 @@ export default defineConfig({
     specPattern: 'cypress/e2e/features/*.feature'
   },
   retries: {
-    "runMode": 2,
+    "runMode": 1,
     "openMode": 0
   },
   defaultCommandTimeout: 4000,
