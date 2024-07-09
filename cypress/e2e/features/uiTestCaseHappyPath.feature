@@ -1,5 +1,5 @@
 @Web @Regression
-Feature: Login functionality on practice test automation website - Happy Path Scenario
+Feature: Verify login functionality is working fine in practice testautomation page
     @Smoke 
     Scenario: Verify login functionality is working fine in practice testautomation page
 

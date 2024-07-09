@@ -1,7 +1,7 @@
 @Web @Regression
-Feature: Login functionality on practice test automation website - UnHappy path scenario
+Feature: Verify invalid user name error message is displayed on practice test automation website with invalid credentials
     
-    Scenario: Verify invalid user name error message is displayed on practice testautomation with invalid credentials
+    Scenario: Verify invalid user name error message is displayed on practice test automation website with invalid credentials
 
         Given the user launch the practice test automation website
         When the user enter "Sathish" as username and "password" as password and click on Submit button
