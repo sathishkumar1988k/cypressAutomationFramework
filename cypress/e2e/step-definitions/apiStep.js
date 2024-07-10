@@ -42,4 +42,14 @@ Then('verify create new user API response body should have {string}', (responseT
     });
 });
 
+Given('the user clicks on GET single user api', () => {
+    cy.get("[data-id='users-single']").click();
+});
 
+Then('the GET single user response code should be {int}', (getResponseCode) => {
+    cy.get("span.response-code").should('have.text',getResponseCode);
+});
+
+Then('the GET single user response body contains {string}', (responseText) => {
+    cy.get("[data-key='output-response']").contains(responseText);
+});

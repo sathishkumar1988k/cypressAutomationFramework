@@ -18,6 +18,6 @@ export default defineConfig({
     "runMode": 1,
     "openMode": 0
   },
-  defaultCommandTimeout: 4000,
+  defaultCommandTimeout: 30000,
   pageLoadTimeout: 60000
 });

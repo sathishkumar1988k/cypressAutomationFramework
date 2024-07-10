@@ -3,7 +3,7 @@ import testData from '../../fixtures/uiTestData.json';
 import loginpage from '../../support/loginpage.js';
 
 Given('the user launch the practice test automation website', () => {
-    cy.visit(testData.url);
+    cy.visit(testData.practicetestautomationurl);
 });
 
 When(/^the user enter "([^"]*)" as username and "([^"]*)" as password and click on Submit button$/, (username, password) => {
@@ -15,4 +15,8 @@ When(/^the user enter "([^"]*)" as username and "([^"]*)" as password and click 
 Then('verify invalid username error message is displayed', () => {
     loginpage.verifyLoginErrorMessage("Your username is invalid!");
     cy.screenshot();
+});
+
+Given('the user launch the reqres website', () => {
+    cy.visit(testData.reqresurl);
 });
