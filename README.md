@@ -8,7 +8,7 @@ Cypress version --> 13.10
     3. Install "Cucumber (Gherkin) Full Support" extension
 
 ## Steps to install:
-    1. Clone this repo.
+    1. Clone this repository
     2. Install the required dependencies using npm install.(Refer package.json for all dependencies)
 
 ## Steps to run cypress scripts with Cucumber framework:
